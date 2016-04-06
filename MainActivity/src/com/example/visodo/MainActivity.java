@@ -70,7 +70,7 @@ public class MainActivity extends Activity implements CvCameraViewListener {
 		IntentFilter filter = new IntentFilter();
 		filter.addAction("bitmap");
 		registerReceiver(dynamicReceiver, filter);
-		show.setVisibility(View.GONE);
+//		show.setVisibility(View.GONE);
 	}
 
 	private void showPic() {
@@ -193,16 +193,16 @@ public class MainActivity extends Activity implements CvCameraViewListener {
 			afterPic = inputFrame;
 			bitmap = Bitmap.createBitmap(afterPic.width(), afterPic.height(),Bitmap.Config.ARGB_8888);
 			Utils.matToBitmap(afterPic, bitmap);
-//			if(bitmap!=null){
-//				runOnUiThread(new Runnable() {
-//					
-//					@Override
-//					public void run() {
-//						showPic();
-//						Log.i(TAG,"show pic");
-//					}
-//				});
-//			}
+			if(bitmap!=null){
+				runOnUiThread(new Runnable() {
+					
+					@Override
+					public void run() {
+						showPic();
+						Log.i(TAG,"show pic");
+					}
+				});
+			}
 			
 //			saveBitmap(bitmap);
 //			Bitmap thirdBitmap = getDiskBitmap("/storage/emulated/0/image/000002.png");

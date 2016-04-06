@@ -80,7 +80,7 @@ void featureDetection(Mat img_1, vector<Point2f>& points1)	{   //uses FAST as of
 
 	vector<KeyPoint> keypoints_1;
 
-  int fast_threshold = 20;
+  int fast_threshold = 15;
   bool nonmaxSuppression = true;
   FAST(img_1, keypoints_1, fast_threshold, nonmaxSuppression);
   KeyPoint::convert(keypoints_1, points1, vector<int>());
