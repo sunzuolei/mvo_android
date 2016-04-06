@@ -17127,3 +17127,39 @@ Binding(ALT+ARROW_LEFT,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.textEditorScope,,cocoa,system)
+
+!ENTRY org.eclipse.egit.core 4 0 2016-04-06 21:09:45.937
+!MESSAGE An exception occurred during push on URI https://github.com/sunzuolei/mvo_android: https://github.com/sunzuolei/mvo_android: Packing cancelled during objects writing
+!STACK 0
+org.eclipse.jgit.errors.TransportException: https://github.com/sunzuolei/mvo_android: Packing cancelled during objects writing
+	at org.eclipse.jgit.transport.BasePackPushConnection.doPush(BasePackPushConnection.java:204)
+	at org.eclipse.jgit.transport.TransportHttp$SmartHttpPushConnection.doPush(TransportHttp.java:771)
+	at org.eclipse.jgit.transport.BasePackPushConnection.push(BasePackPushConnection.java:142)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:141)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1162)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:185)
+	at org.eclipse.egit.ui.internal.push.PushWizard$PushJob.run(PushWizard.java:298)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Caused by: java.io.IOException: Packing cancelled during objects writing
+	at org.eclipse.jgit.storage.pack.PackOutputStream.write(PackOutputStream.java:118)
+	at java.util.zip.DeflaterOutputStream.deflate(DeflaterOutputStream.java:253)
+	at java.util.zip.DeflaterOutputStream.write(DeflaterOutputStream.java:211)
+	at java.io.FilterOutputStream.write(FilterOutputStream.java:97)
+	at org.eclipse.jgit.lib.ObjectLoader.copyTo(ObjectLoader.java:266)
+	at org.eclipse.jgit.storage.pack.PackWriter.writeWholeObjectDeflate(PackWriter.java:1416)
+	at org.eclipse.jgit.storage.pack.PackWriter.writeObjectImpl(PackWriter.java:1394)
+	at org.eclipse.jgit.storage.pack.PackWriter.writeBase(PackWriter.java:1402)
+	at org.eclipse.jgit.storage.pack.PackWriter.writeDeltaObjectDeflate(PackWriter.java:1422)
+	at org.eclipse.jgit.storage.pack.PackWriter.writeObjectImpl(PackWriter.java:1392)
+	at org.eclipse.jgit.storage.pack.PackWriter.writeObject(PackWriter.java:1331)
+	at org.eclipse.jgit.storage.pack.PackOutputStream.writeObject(PackOutputStream.java:161)
+	at org.eclipse.jgit.storage.file.WindowCursor.writeObjects(WindowCursor.java:174)
+	at org.eclipse.jgit.storage.pack.PackWriter.writeObjects(PackWriter.java:1319)
+	at org.eclipse.jgit.storage.pack.PackWriter.writeObjects(PackWriter.java:1307)
+	at org.eclipse.jgit.storage.pack.PackWriter.writePack(PackWriter.java:897)
+	at org.eclipse.jgit.transport.BasePackPushConnection.writePack(BasePackPushConnection.java:284)
+	at org.eclipse.jgit.transport.BasePackPushConnection.doPush(BasePackPushConnection.java:184)
+	... 7 more
+
+!ENTRY org.eclipse.egit.ui 4 0 2016-04-06 21:09:45.943
+!MESSAGE Can't connect to any repository: https://github.com/sunzuolei/mvo_android (https://github.com/sunzuolei/mvo_android: Packing cancelled during objects writing)
