@@ -1,0 +1,1326 @@
+
+**** Clean-only build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build clean 
+jni/Android.mk:9: I:/OpenCV-android-sdk/sdk/native/jni/OpenCV.mk: No such file or directory
+obj/local/armeabi-v7a/objs/visodo/visodo.o.d:1: *** multiple target patterns.  Stop.
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build clean 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+obj/local/armeabi-v7a/objs/visodo/visodo.o.d:1: *** multiple target patterns.  Stop.
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build clean 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+obj/local/armeabi-v7a/objs/visodo/visodo.o.d:1: *** multiple target patterns.  Stop.
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build clean 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+obj/local/armeabi-v7a/objs/visodo/visodo.o.d:1: *** multiple target patterns.  Stop.
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build clean 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+obj/local/armeabi-v7a/objs/visodo/visodo.o.d:1: *** multiple target patterns.  Stop.
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+obj/local/armeabi-v7a/objs/visodo/visodo.o.d:1: *** multiple target patterns.  Stop.
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+obj/local/armeabi-v7a/objs/visodo/visodo.o.d:1: *** multiple target patterns.  Stop.
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build clean 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+obj/local/armeabi-v7a/objs/visodo/visodo.o.d:1: *** multiple target patterns.  Stop.
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+obj/local/armeabi-v7a/objs/visodo/visodo.o.d:1: *** multiple target patterns.  Stop.
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build clean 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+obj/local/armeabi-v7a/objs/visodo/visodo.o.d:1: *** multiple target patterns.  Stop.
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build clean 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+obj/local/armeabi-v7a/objs/visodo/visodo.o.d:1: *** multiple target patterns.  Stop.
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+obj/local/armeabi-v7a/objs/visodo/visodo.o.d:1: *** multiple target patterns.  Stop.
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Compile++ thumb: visodo <= visodo.cpp
+[armeabi-v7a] SharedLibrary  : libvisodo.so
+/Users/EchoZhou/Downloads/android-ndk-r10e/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.8/../../../../arm-linux-androideabi/bin/ld: warning: hidden symbol '__aeabi_atexit' in /Users/EchoZhou/Downloads/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/thumb/libgnustl_static.a(atexit_arm.o) is referenced by DSO /Users/EchoZhou/develop/opencv/sdk/native/jni/../libs/armeabi-v7a/libopencv_java3.so
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Compile++ thumb: visodo <= visodo.cpp
+In file included from jni/visodo.cpp:27:0:
+jni/vo_features.h: In function 'void featureTracking(cv::Mat, cv::Mat, std::vector<cv::Point_<float> >&, std::vector<cv::Point_<float> >&, std::vector<unsigned char>&)':
+jni/vo_features.h:75:60: error: a function-definition is not allowed here before '{' token
+ void featureDetection(Mat img_1, vector<Point2f>& points1) {   //uses FAST as of now, modify parameters as necessary
+                                                            ^
+In file included from jni/com_example_visodo_LibVisodo.h:2:0,
+                 from jni/visodo.cpp:28:
+/Users/EchoZhou/Downloads/android-ndk-r10e/platforms/android-8/arch-arm/usr/include/jni.h:1126:8: error: expected unqualified-id before string constant
+ extern "C" {
+        ^
+In file included from jni/visodo.cpp:28:0:
+jni/com_example_visodo_LibVisodo.h:8:8: error: expected unqualified-id before string constant
+ extern "C" {
+        ^
+In file included from jni/visodo.cpp:30:0:
+/Users/EchoZhou/Downloads/android-ndk-r10e/platforms/android-8/arch-arm/usr/include/android/log.h:73:8: error: expected unqualified-id before string constant
+ extern "C" {
+        ^
+jni/visodo.cpp:173:1: error: expected '}' at end of input
+ }
+ ^
+make: *** [obj/local/armeabi-v7a/objs/visodo/visodo.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Compile++ thumb: visodo <= visodo.cpp
+In file included from jni/visodo.cpp:27:0:
+jni/vo_features.h: In function 'void featureTracking(cv::Mat, cv::Mat, std::vector<cv::Point_<float> >&, std::vector<cv::Point_<float> >&, std::vector<unsigned char>&)':
+jni/vo_features.h:75:60: error: a function-definition is not allowed here before '{' token
+ void featureDetection(Mat img_1, vector<Point2f>& points1) {   //uses FAST as of now, modify parameters as necessary
+                                                            ^
+In file included from jni/com_example_visodo_LibVisodo.h:2:0,
+                 from jni/visodo.cpp:28:
+/Users/EchoZhou/Downloads/android-ndk-r10e/platforms/android-8/arch-arm/usr/include/jni.h:1126:8: error: expected unqualified-id before string constant
+ extern "C" {
+        ^
+In file included from jni/visodo.cpp:28:0:
+jni/com_example_visodo_LibVisodo.h:8:8: error: expected unqualified-id before string constant
+ extern "C" {
+        ^
+In file included from jni/visodo.cpp:30:0:
+/Users/EchoZhou/Downloads/android-ndk-r10e/platforms/android-8/arch-arm/usr/include/android/log.h:73:8: error: expected unqualified-id before string constant
+ extern "C" {
+        ^
+jni/visodo.cpp:174:1: error: expected '}' at end of input
+ }
+ ^
+make: *** [obj/local/armeabi-v7a/objs/visodo/visodo.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Compile++ thumb: visodo <= visodo.cpp
+[armeabi-v7a] SharedLibrary  : libvisodo.so
+/Users/EchoZhou/Downloads/android-ndk-r10e/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.8/../../../../arm-linux-androideabi/bin/ld: warning: hidden symbol '__aeabi_atexit' in /Users/EchoZhou/Downloads/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/thumb/libgnustl_static.a(atexit_arm.o) is referenced by DSO /Users/EchoZhou/develop/opencv/sdk/native/jni/../libs/armeabi-v7a/libopencv_java3.so
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Compile++ thumb: visodo <= visodo.cpp
+In file included from jni/visodo.cpp:27:0:
+jni/vo_features.h: In function 'void featureTracking(cv::Mat, cv::Mat, std::vector<cv::Point_<float> >&, std::vector<cv::Point_<float> >&, std::vector<unsigned char>&)':
+jni/vo_features.h:75:60: error: a function-definition is not allowed here before '{' token
+ void featureDetection(Mat img_1, vector<Point2f>& points1) {   //uses FAST as of now, modify parameters as necessary
+                                                            ^
+In file included from jni/com_example_visodo_LibVisodo.h:2:0,
+                 from jni/visodo.cpp:28:
+/Users/EchoZhou/Downloads/android-ndk-r10e/platforms/android-8/arch-arm/usr/include/jni.h:1126:8: error: expected unqualified-id before string constant
+ extern "C" {
+        ^
+In file included from jni/visodo.cpp:28:0:
+jni/com_example_visodo_LibVisodo.h:8:8: error: expected unqualified-id before string constant
+ extern "C" {
+        ^
+In file included from jni/visodo.cpp:30:0:
+/Users/EchoZhou/Downloads/android-ndk-r10e/platforms/android-8/arch-arm/usr/include/android/log.h:73:8: error: expected unqualified-id before string constant
+ extern "C" {
+        ^
+jni/visodo.cpp:173:1: error: expected '}' at end of input
+ }
+ ^
+make: *** [obj/local/armeabi-v7a/objs/visodo/visodo.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Compile++ thumb: visodo <= visodo.cpp
+[armeabi-v7a] SharedLibrary  : libvisodo.so
+/Users/EchoZhou/Downloads/android-ndk-r10e/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.8/../../../../arm-linux-androideabi/bin/ld: warning: hidden symbol '__aeabi_atexit' in /Users/EchoZhou/Downloads/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/thumb/libgnustl_static.a(atexit_arm.o) is referenced by DSO /Users/EchoZhou/develop/opencv/sdk/native/jni/../libs/armeabi-v7a/libopencv_java3.so
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Compile++ thumb: visodo <= visodo.cpp
+[armeabi-v7a] SharedLibrary  : libvisodo.so
+/Users/EchoZhou/Downloads/android-ndk-r10e/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.8/../../../../arm-linux-androideabi/bin/ld: warning: hidden symbol '__aeabi_atexit' in /Users/EchoZhou/Downloads/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/thumb/libgnustl_static.a(atexit_arm.o) is referenced by DSO /Users/EchoZhou/develop/opencv/sdk/native/jni/../libs/armeabi-v7a/libopencv_java3.so
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Compile++ thumb: visodo <= visodo.cpp
+[armeabi-v7a] SharedLibrary  : libvisodo.so
+/Users/EchoZhou/Downloads/android-ndk-r10e/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.8/../../../../arm-linux-androideabi/bin/ld: warning: hidden symbol '__aeabi_atexit' in /Users/EchoZhou/Downloads/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/thumb/libgnustl_static.a(atexit_arm.o) is referenced by DSO /Users/EchoZhou/develop/opencv/sdk/native/jni/../libs/armeabi-v7a/libopencv_java3.so
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Compile++ thumb: visodo <= visodo.cpp
+[armeabi-v7a] SharedLibrary  : libvisodo.so
+/Users/EchoZhou/Downloads/android-ndk-r10e/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.8/../../../../arm-linux-androideabi/bin/ld: warning: hidden symbol '__aeabi_atexit' in /Users/EchoZhou/Downloads/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/thumb/libgnustl_static.a(atexit_arm.o) is referenced by DSO /Users/EchoZhou/develop/opencv/sdk/native/jni/../libs/armeabi-v7a/libopencv_java3.so
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Compile++ thumb: visodo <= visodo.cpp
+jni/visodo.cpp: In function '_jstring* Java_com_example_visodo_LibVisodo_init(JNIEnv*, jclass, jlong, jlong)':
+jni/visodo.cpp:53:59: warning: too many arguments for format [-Wformat-extra-args]
+  sprintf(filename1, "/storage/emulated/0/image_2/a.jpg", 0);
+                                                           ^
+jni/visodo.cpp:54:59: warning: too many arguments for format [-Wformat-extra-args]
+  sprintf(filename2, "/storage/emulated/0/image_2/a.jpg", 1);
+                                                           ^
+jni/visodo.cpp: In function '_jstring* Java_com_example_visodo_LibVisodo_start(JNIEnv*, jclass, jlong, jlong, jint)':
+jni/visodo.cpp:113:58: warning: too many arguments for format [-Wformat-extra-args]
+  sprintf(filename, "/storage/emulated/0/image_2/a.jpg", i);
+                                                          ^
+[armeabi-v7a] SharedLibrary  : libvisodo.so
+/Users/EchoZhou/Downloads/android-ndk-r10e/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.8/../../../../arm-linux-androideabi/bin/ld: warning: hidden symbol '__aeabi_atexit' in /Users/EchoZhou/Downloads/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/thumb/libgnustl_static.a(atexit_arm.o) is referenced by DSO /Users/EchoZhou/develop/opencv/sdk/native/jni/../libs/armeabi-v7a/libopencv_java3.so
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Compile++ thumb: visodo <= visodo.cpp
+jni/visodo.cpp: In function '_jstring* Java_com_example_visodo_LibVisodo_start(JNIEnv*, jclass, jlong, jlong, jint)':
+jni/visodo.cpp:115:8: error: conflicting declaration 'cv::Mat& currImage_c'
+  Mat & currImage_c = *(Mat*) afterPic;
+        ^
+jni/visodo.cpp:114:6: error: 'currImage_c' has a previous declaration as 'cv::Mat currImage_c'
+  Mat currImage_c = imread(filename);
+      ^
+make: *** [obj/local/armeabi-v7a/objs/visodo/visodo.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Compile++ thumb: visodo <= visodo.cpp
+[armeabi-v7a] SharedLibrary  : libvisodo.so
+/Users/EchoZhou/Downloads/android-ndk-r10e/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.8/../../../../arm-linux-androideabi/bin/ld: warning: hidden symbol '__aeabi_atexit' in /Users/EchoZhou/Downloads/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/thumb/libgnustl_static.a(atexit_arm.o) is referenced by DSO /Users/EchoZhou/develop/opencv/sdk/native/jni/../libs/armeabi-v7a/libopencv_java3.so
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Compile++ thumb: visodo <= visodo.cpp
+[armeabi-v7a] SharedLibrary  : libvisodo.so
+/Users/EchoZhou/Downloads/android-ndk-r10e/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.8/../../../../arm-linux-androideabi/bin/ld: warning: hidden symbol '__aeabi_atexit' in /Users/EchoZhou/Downloads/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/thumb/libgnustl_static.a(atexit_arm.o) is referenced by DSO /Users/EchoZhou/develop/opencv/sdk/native/jni/../libs/armeabi-v7a/libopencv_java3.so
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Compile++ thumb: visodo <= visodo.cpp
+[armeabi-v7a] SharedLibrary  : libvisodo.so
+/Users/EchoZhou/Downloads/android-ndk-r10e/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.8/../../../../arm-linux-androideabi/bin/ld: warning: hidden symbol '__aeabi_atexit' in /Users/EchoZhou/Downloads/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/thumb/libgnustl_static.a(atexit_arm.o) is referenced by DSO /Users/EchoZhou/develop/opencv/sdk/native/jni/../libs/armeabi-v7a/libopencv_java3.so
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Compile++ thumb: visodo <= visodo.cpp
+[armeabi-v7a] SharedLibrary  : libvisodo.so
+/Users/EchoZhou/Downloads/android-ndk-r10e/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.8/../../../../arm-linux-androideabi/bin/ld: warning: hidden symbol '__aeabi_atexit' in /Users/EchoZhou/Downloads/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/thumb/libgnustl_static.a(atexit_arm.o) is referenced by DSO /Users/EchoZhou/develop/opencv/sdk/native/jni/../libs/armeabi-v7a/libopencv_java3.so
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Compile++ thumb: visodo <= visodo.cpp
+[armeabi-v7a] SharedLibrary  : libvisodo.so
+/Users/EchoZhou/Downloads/android-ndk-r10e/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.8/../../../../arm-linux-androideabi/bin/ld: warning: hidden symbol '__aeabi_atexit' in /Users/EchoZhou/Downloads/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/thumb/libgnustl_static.a(atexit_arm.o) is referenced by DSO /Users/EchoZhou/develop/opencv/sdk/native/jni/../libs/armeabi-v7a/libopencv_java3.so
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Compile++ thumb: visodo <= visodo.cpp
+[armeabi-v7a] SharedLibrary  : libvisodo.so
+/Users/EchoZhou/Downloads/android-ndk-r10e/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.8/../../../../arm-linux-androideabi/bin/ld: warning: hidden symbol '__aeabi_atexit' in /Users/EchoZhou/Downloads/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/thumb/libgnustl_static.a(atexit_arm.o) is referenced by DSO /Users/EchoZhou/develop/opencv/sdk/native/jni/../libs/armeabi-v7a/libopencv_java3.so
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Compile++ thumb: visodo <= visodo.cpp
+[armeabi-v7a] SharedLibrary  : libvisodo.so
+/Users/EchoZhou/Downloads/android-ndk-r10e/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.8/../../../../arm-linux-androideabi/bin/ld: warning: hidden symbol '__aeabi_atexit' in /Users/EchoZhou/Downloads/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/thumb/libgnustl_static.a(atexit_arm.o) is referenced by DSO /Users/EchoZhou/develop/opencv/sdk/native/jni/../libs/armeabi-v7a/libopencv_java3.so
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Compile++ thumb: visodo <= visodo.cpp
+[armeabi-v7a] SharedLibrary  : libvisodo.so
+/Users/EchoZhou/Downloads/android-ndk-r10e/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.8/../../../../arm-linux-androideabi/bin/ld: warning: hidden symbol '__aeabi_atexit' in /Users/EchoZhou/Downloads/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/thumb/libgnustl_static.a(atexit_arm.o) is referenced by DSO /Users/EchoZhou/develop/opencv/sdk/native/jni/../libs/armeabi-v7a/libopencv_java3.so
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Compile++ thumb: visodo <= visodo.cpp
+[armeabi-v7a] SharedLibrary  : libvisodo.so
+/Users/EchoZhou/Downloads/android-ndk-r10e/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.8/../../../../arm-linux-androideabi/bin/ld: warning: hidden symbol '__aeabi_atexit' in /Users/EchoZhou/Downloads/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/thumb/libgnustl_static.a(atexit_arm.o) is referenced by DSO /Users/EchoZhou/develop/opencv/sdk/native/jni/../libs/armeabi-v7a/libopencv_java3.so
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Compile++ thumb: visodo <= visodo.cpp
+[armeabi-v7a] SharedLibrary  : libvisodo.so
+/Users/EchoZhou/Downloads/android-ndk-r10e/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.8/../../../../arm-linux-androideabi/bin/ld: warning: hidden symbol '__aeabi_atexit' in /Users/EchoZhou/Downloads/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/thumb/libgnustl_static.a(atexit_arm.o) is referenced by DSO /Users/EchoZhou/develop/opencv/sdk/native/jni/../libs/armeabi-v7a/libopencv_java3.so
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Compile++ thumb: visodo <= visodo.cpp
+[armeabi-v7a] SharedLibrary  : libvisodo.so
+/Users/EchoZhou/Downloads/android-ndk-r10e/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.8/../../../../arm-linux-androideabi/bin/ld: warning: hidden symbol '__aeabi_atexit' in /Users/EchoZhou/Downloads/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/thumb/libgnustl_static.a(atexit_arm.o) is referenced by DSO /Users/EchoZhou/develop/opencv/sdk/native/jni/../libs/armeabi-v7a/libopencv_java3.so
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Compile++ thumb: visodo <= visodo.cpp
+[armeabi-v7a] SharedLibrary  : libvisodo.so
+/Users/EchoZhou/Downloads/android-ndk-r10e/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.8/../../../../arm-linux-androideabi/bin/ld: warning: hidden symbol '__aeabi_atexit' in /Users/EchoZhou/Downloads/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/thumb/libgnustl_static.a(atexit_arm.o) is referenced by DSO /Users/EchoZhou/develop/opencv/sdk/native/jni/../libs/armeabi-v7a/libopencv_java3.so
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Compile++ thumb: visodo <= visodo.cpp
+[armeabi-v7a] SharedLibrary  : libvisodo.so
+/Users/EchoZhou/Downloads/android-ndk-r10e/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.8/../../../../arm-linux-androideabi/bin/ld: warning: hidden symbol '__aeabi_atexit' in /Users/EchoZhou/Downloads/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/thumb/libgnustl_static.a(atexit_arm.o) is referenced by DSO /Users/EchoZhou/develop/opencv/sdk/native/jni/../libs/armeabi-v7a/libopencv_java3.so
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Compile++ thumb: visodo <= visodo.cpp
+[armeabi-v7a] SharedLibrary  : libvisodo.so
+/Users/EchoZhou/Downloads/android-ndk-r10e/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.8/../../../../arm-linux-androideabi/bin/ld: warning: hidden symbol '__aeabi_atexit' in /Users/EchoZhou/Downloads/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/thumb/libgnustl_static.a(atexit_arm.o) is referenced by DSO /Users/EchoZhou/develop/opencv/sdk/native/jni/../libs/armeabi-v7a/libopencv_java3.so
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Compile++ thumb: visodo <= visodo.cpp
+jni/visodo.cpp: In function '_jstring* Java_com_example_visodo_LibVisodo_init(JNIEnv*, jclass, jlong, jlong)':
+jni/visodo.cpp:61:7: error: conflicting declaration 'cv::Mat& img_2_c'
+  Mat& img_2_c = *(Mat*) secondPic;
+       ^
+jni/visodo.cpp:58:6: error: 'img_2_c' has a previous declaration as 'cv::Mat img_2_c'
+  Mat img_2_c = imread(filename2);
+      ^
+make: *** [obj/local/armeabi-v7a/objs/visodo/visodo.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Compile++ thumb: visodo <= visodo.cpp
+[armeabi-v7a] SharedLibrary  : libvisodo.so
+/Users/EchoZhou/Downloads/android-ndk-r10e/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.8/../../../../arm-linux-androideabi/bin/ld: warning: hidden symbol '__aeabi_atexit' in /Users/EchoZhou/Downloads/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/thumb/libgnustl_static.a(atexit_arm.o) is referenced by DSO /Users/EchoZhou/develop/opencv/sdk/native/jni/../libs/armeabi-v7a/libopencv_java3.so
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Compile++ thumb: visodo <= visodo.cpp
+[armeabi-v7a] SharedLibrary  : libvisodo.so
+/Users/EchoZhou/Downloads/android-ndk-r10e/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.8/../../../../arm-linux-androideabi/bin/ld: warning: hidden symbol '__aeabi_atexit' in /Users/EchoZhou/Downloads/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/thumb/libgnustl_static.a(atexit_arm.o) is referenced by DSO /Users/EchoZhou/develop/opencv/sdk/native/jni/../libs/armeabi-v7a/libopencv_java3.so
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Compile++ thumb: visodo <= visodo.cpp
+[armeabi-v7a] SharedLibrary  : libvisodo.so
+/Users/EchoZhou/Downloads/android-ndk-r10e/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.8/../../../../arm-linux-androideabi/bin/ld: warning: hidden symbol '__aeabi_atexit' in /Users/EchoZhou/Downloads/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/thumb/libgnustl_static.a(atexit_arm.o) is referenced by DSO /Users/EchoZhou/develop/opencv/sdk/native/jni/../libs/armeabi-v7a/libopencv_java3.so
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Compile++ thumb: visodo <= visodo.cpp
+jni/visodo.cpp: In function '_jstring* Java_com_example_visodo_LibVisodo_init(JNIEnv*, jclass, jlong, jlong)':
+jni/visodo.cpp:60:7: error: conflicting declaration 'cv::Mat& img_1_c'
+  Mat& img_1_c = *(Mat*) firstPic;
+       ^
+jni/visodo.cpp:57:6: error: 'img_1_c' has a previous declaration as 'cv::Mat img_1_c'
+  Mat img_1_c = imread(filename1);
+      ^
+jni/visodo.cpp:61:7: error: conflicting declaration 'cv::Mat& img_2_c'
+  Mat& img_2_c = *(Mat*) secondPic;
+       ^
+jni/visodo.cpp:58:6: error: 'img_2_c' has a previous declaration as 'cv::Mat img_2_c'
+  Mat img_2_c = imread(filename2);
+      ^
+make: *** [obj/local/armeabi-v7a/objs/visodo/visodo.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Compile++ thumb: visodo <= visodo.cpp
+[armeabi-v7a] SharedLibrary  : libvisodo.so
+/Users/EchoZhou/Downloads/android-ndk-r10e/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.8/../../../../arm-linux-androideabi/bin/ld: warning: hidden symbol '__aeabi_atexit' in /Users/EchoZhou/Downloads/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/thumb/libgnustl_static.a(atexit_arm.o) is referenced by DSO /Users/EchoZhou/develop/opencv/sdk/native/jni/../libs/armeabi-v7a/libopencv_java3.so
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Compile++ thumb: visodo <= visodo.cpp
+[armeabi-v7a] SharedLibrary  : libvisodo.so
+/Users/EchoZhou/Downloads/android-ndk-r10e/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.8/../../../../arm-linux-androideabi/bin/ld: warning: hidden symbol '__aeabi_atexit' in /Users/EchoZhou/Downloads/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/thumb/libgnustl_static.a(atexit_arm.o) is referenced by DSO /Users/EchoZhou/develop/opencv/sdk/native/jni/../libs/armeabi-v7a/libopencv_java3.so
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****
+
+**** Build of configuration Default for project MainActivity ****
+
+/Users/EchoZhou/Downloads/android-ndk-r10e/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:visodo: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Install        : libvisodo.so => libs/armeabi-v7a/libvisodo.so
+
+**** Build Finished ****

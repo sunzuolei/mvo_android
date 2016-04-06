@@ -1,0 +1,239 @@
+package com.example.visodo;
+
+import java.io.File;
+
+import org.opencv.android.BaseLoaderCallback;
+import org.opencv.android.CameraBridgeViewBase;
+import org.opencv.android.CameraBridgeViewBase.CvCameraViewListener;
+import org.opencv.android.LoaderCallbackInterface;
+import org.opencv.android.OpenCVLoader;
+import org.opencv.android.Utils;
+import org.opencv.core.CvType;
+import org.opencv.core.Mat;
+
+import android.app.Activity;
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.os.Bundle;
+import android.util.Log;
+import android.widget.ImageView;
+import android.widget.Toast;
+
+public class MainActivity extends Activity implements CvCameraViewListener {
+
+	private ImageView show;
+
+	private String TAG = "MainActivity";
+	private CameraBridgeViewBase mOpenCvCameraView;
+	private Mat mRgba;
+	private Mat firstPic;
+	private Mat secondPic;
+	private Mat afterPic;
+	private Bitmap bitmap;
+	private boolean first = true;
+	private boolean second = false;
+	private boolean third = false;
+	private int i = 2;
+
+	private BaseLoaderCallback mLoaderCallback = new BaseLoaderCallback(this) {
+		@Override
+		public void onManagerConnected(int status) {
+			switch (status) {
+			case LoaderCallbackInterface.SUCCESS: {
+				Log.i(TAG, "OpenCV loaded successfully");
+				mOpenCvCameraView.enableView();
+			}
+				break;
+			default: {
+				super.onManagerConnected(status);
+			}
+				break;
+			}
+		}
+	};
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+//		show = (ImageView) findViewById(R.id.tv_show);
+		mOpenCvCameraView = (CameraBridgeViewBase) findViewById(R.id.color_blob_detection_activity_surface_view);
+		mOpenCvCameraView.setCvCameraViewListener(this);
+		IntentFilter filter = new IntentFilter();
+		filter.addAction("bitmap");
+		registerReceiver(dynamicReceiver, filter);
+
+	}
+
+	@Override
+	public void onCameraViewStarted(int width, int height) {
+		mRgba = new Mat(height, width, CvType.CV_8UC4);
+		bitmap = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
+	}
+
+	@Override
+	public void onCameraViewStopped() {
+		mRgba.release();
+	}
+
+//	@Override
+//	public Mat onCameraFrame(CvCameraViewFrame inputFrame) {
+//
+//		if (first) {
+////			Bitmap firstBitmap = getDiskBitmap("/storage/emulated/0/image_2/000000.png");
+//			firstPic = inputFrame.rgba();
+////			Utils.bitmapToMat(firstBitmap, firstPic);	
+////			Mat d = new Mat(firstPic.rows(), firstPic.cols(), CvType.CV_32F);
+////			firstPic.convertTo(d, CvType.CV_32F);
+//			first = false;
+//			second = true;
+//			Log.i(TAG, firstPic.type()+""+firstPic.channels()+firstPic.rows()+firstPic.cols()+firstPic);
+//			Log.i(TAG, "first success");
+//		}
+//		if (second) {
+//////			Bitmap secondBitmap = getDiskBitmap("/storage/emulated/0/image_2/000001.png");
+//			secondPic = inputFrame.rgba();
+//////			Utils.bitmapToMat(secondBitmap, secondPic);	 
+////			Log.i(TAG, secondPic.type()+""+secondPic.channels()+secondPic);
+////			Mat d = inputFrame.rgba();
+////			Log.i(TAG, d.type()+""+d.channels()+d);
+////			d.convertTo(secondPic, CvType.CV_8U,1/255.0);
+//			second = false;
+//			third = true;
+////			Log.i(TAG, secondPic.type()+""+secondPic.channels()+secondPic);
+////			Log.i(TAG, d.type()+""+d.channels()+d);
+//			LibVisodo.init(firstPic.getNativeObjAddr(),
+//					secondPic.getNativeObjAddr());
+//			Log.i(TAG, "second success");
+//		}
+//		if (third) {
+////			Bitmap thirdBitmap = getDiskBitmap("/storage/emulated/0/image_2/000003.png");
+//			afterPic = inputFrame.rgba();
+////			Utils.bitmapToMat(thirdBitmap, afterPic);
+//////			Mat d = new Mat(afterPic.rows(), afterPic.cols(), CvType.CV_64F);
+////			afterPic.convertTo(d, CvType.CV_32F);
+//			LibVisodo.start(mRgba.getNativeObjAddr(),
+//					afterPic.getNativeObjAddr(),i);
+//			i++;
+//			Log.i(TAG, "third success");
+//		}
+//		return mRgba;
+//	}
+
+	@Override
+	public void onPause() {
+		super.onPause();
+		if (mOpenCvCameraView != null)
+			mOpenCvCameraView.disableView();
+	}
+
+	@Override
+	public void onResume() {
+		super.onResume();
+		if (!OpenCVLoader.initDebug()) {
+			Log.d(TAG,
+					"Internal OpenCV library not found. Using OpenCV Manager for initialization");
+			OpenCVLoader.initAsync(OpenCVLoader.OPENCV_VERSION_3_0_0, this,
+					mLoaderCallback);
+		} else {
+			Log.d(TAG, "OpenCV library found inside package. Using it!");
+			mLoaderCallback.onManagerConnected(LoaderCallbackInterface.SUCCESS);
+		}
+	}
+
+	public void onDestroy() {
+		super.onDestroy();
+		if (mOpenCvCameraView != null)
+			mOpenCvCameraView.disableView();
+		unregisterReceiver(dynamicReceiver);
+	}
+
+	private BroadcastReceiver dynamicReceiver = new BroadcastReceiver() {
+
+		@Override
+		public void onReceive(Context context, Intent intent) {
+			Toast.makeText(MainActivity.this, "Success", Toast.LENGTH_SHORT)
+					.show();
+			show.setImageBitmap(bitmap);
+		}
+
+	};
+	
+	private Bitmap getDiskBitmap(String pathString)  
+	{  
+	    Bitmap bitmap = null;  
+	    try  
+	    {  
+	        File file = new File(pathString);  
+	        if(file.exists())  
+	        {  
+	            bitmap = BitmapFactory.decodeFile(pathString);  
+	        }  
+	    } catch (Exception e)  
+	    {  
+	    }  
+	      
+	      
+	    return bitmap;  
+	}
+
+	@Override
+	public Mat onCameraFrame(Mat inputFrame) {
+		if (first) {
+			
+			
+			
+			Bitmap firstBitmap = getDiskBitmap("/storage/emulated/0/image/000000.jpg");
+			firstPic = inputFrame;
+			Utils.bitmapToMat(firstBitmap, firstPic);	
+//			Mat d = new Mat(firstPic.rows(), firstPic.cols(), CvType.CV_32F);
+//			firstPic.convertTo(d, CvType.CV_32F);
+			first = false;
+			second = true;
+			Log.i(TAG, firstPic.type()+""+firstPic.channels()+firstPic.rows()+firstPic.cols()+firstPic);
+			Log.i(TAG, "first success");
+		}
+		if (second) {
+//			Bitmap secondBitmap 
+//			= getDiskBitmap("/storage/emulated/0/image/000001.jpg");
+			secondPic = inputFrame;
+			Log.i(TAG, secondPic.type()+""+secondPic.channels()+secondPic);
+			
+//			secondBitmap = Bitmap.createBitmap(inputFrame.width(), inputFrame.height(), Bitmap.Config.RGB_565);  
+		        
+			
+			
+			
+//			Utils.matToBitmap(secondPic, secondBitmap);
+//			Utils.bitmapToMat(secondBitmap, secondPic);	 
+//			Mat d = inputFrame.rgba();
+//			Log.i(TAG, d.type()+""+d.channels()+d);
+//			d.convertTo(secondPic, CvType.CV_8U,1/255.0);
+			second = false;
+			third = true;
+//			Log.i(TAG, secondPic.type()+""+secondPic.channels()+secondPic);
+//			Log.i(TAG, d.type()+""+d.channels()+d);
+			LibVisodo.init(firstPic.getNativeObjAddr(),
+					secondPic.getNativeObjAddr());
+			Log.i(TAG, "second success");
+		}
+		if (third) {
+			Bitmap thirdBitmap = getDiskBitmap("/storage/emulated/0/image/000002.jpg");
+			afterPic = inputFrame;
+//			Utils.matToBitmap(afterPic, thirdBitmap);
+			Utils.bitmapToMat(thirdBitmap, afterPic);
+////			Mat d = new Mat(afterPic.rows(), afterPic.cols(), CvType.CV_64F);
+//			afterPic.convertTo(d, CvType.CV_32F);
+			LibVisodo.start(mRgba.getNativeObjAddr(),
+					afterPic.getNativeObjAddr(),i);
+			i++;
+			Log.i(TAG, "third success");
+		}
+		return mRgba;
+	}  
+
+}
