@@ -7,8 +7,9 @@ The monocular visual odometry implemented on an Android phone.
 
 ### 2.Function
 * Camera Model
-Using mobile camera to get image inputFrame and output the position and attitude of camera.
 
+Using mobile camera to get image inputFrame and output the position and attitude of camera.
 * Local Model
+
 Get inputFrame through local storage directory and output the position and attitude of camera.
 
