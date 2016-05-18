@@ -4,7 +4,7 @@ The monocular visual odometry implemented on an Android phone.
 * Eclipse with ADT and android-ndk-r10e;
 * OpenCV4Android 3.0.0 or 3.1.0;
 
-[Click here to download OpenCV4Android](http://opencv.org/downloads.html)
+  [Here to download OpenCV4Android](http://opencv.org/downloads.html)
 * OpenCV Manger
 
 ### 2.Function
