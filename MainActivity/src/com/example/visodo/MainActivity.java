@@ -13,6 +13,7 @@ import org.opencv.android.OpenCVLoader;
 import org.opencv.android.Utils;
 import org.opencv.core.CvType;
 import org.opencv.core.Mat;
+import org.opencv.core.Scalar;
 
 import android.app.Activity;
 import android.content.BroadcastReceiver;
@@ -23,8 +24,12 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.TextureView;
 import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends Activity implements CvCameraViewListener {
@@ -38,11 +43,19 @@ public class MainActivity extends Activity implements CvCameraViewListener {
 	private Mat secondPic;
 	private Mat afterPic;
 	private Bitmap bitmap;
+	private TextView result;
+	private Button btnChange;
 	private boolean first = true;
 	private boolean second = false;
 	private boolean third = false;
 	private int i = 2;
-
+	double xx = 0d;
+	double yy= 0d;
+	double zz = 0d;
+	private boolean isFromCamera = true;
+	private int width;
+	private int height;
+	
 	private BaseLoaderCallback mLoaderCallback = new BaseLoaderCallback(this) {
 		@Override
 		public void onManagerConnected(int status) {
@@ -65,11 +78,31 @@ public class MainActivity extends Activity implements CvCameraViewListener {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		show = (ImageView) findViewById(R.id.tv_show);
+		result = (TextView)findViewById(R.id.tv_result);
+		btnChange = (Button) findViewById(R.id.btn_change);
+		btnChange.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				mRgba = new Mat(height, width, CvType.CV_8UC4,Scalar.all(255));
+				first = true;
+				second = false;
+				third = false;
+				i = 2;
+				if(isFromCamera){
+					isFromCamera = false;
+					btnChange.setText("Local");
+				}
+				else{
+					isFromCamera = true;
+					btnChange.setText("Camera");
+				}
+			}
+		});
 		mOpenCvCameraView = (CameraBridgeViewBase) findViewById(R.id.color_blob_detection_activity_surface_view);
 		mOpenCvCameraView.setCvCameraViewListener(this);
 		IntentFilter filter = new IntentFilter();
 		filter.addAction("bitmap");
-		registerReceiver(dynamicReceiver, filter);
 //		show.setVisibility(View.GONE);
 	}
 
@@ -80,8 +113,9 @@ public class MainActivity extends Activity implements CvCameraViewListener {
 
 	@Override
 	public void onCameraViewStarted(int width, int height) {
-		mRgba = new Mat(height, width, CvType.CV_8UC4);
-//		bitmap = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
+		this.width = width;
+		this.height = height;
+		mRgba = new Mat(height, width, CvType.CV_8UC4,Scalar.all(255));
 	}
 
 	@Override
@@ -115,19 +149,8 @@ public class MainActivity extends Activity implements CvCameraViewListener {
 		super.onDestroy();
 		if (mOpenCvCameraView != null)
 			mOpenCvCameraView.disableView();
-		unregisterReceiver(dynamicReceiver);
 	}
 
-	private BroadcastReceiver dynamicReceiver = new BroadcastReceiver() {
-
-		@Override
-		public void onReceive(Context context, Intent intent) {
-			Toast.makeText(MainActivity.this, "Success", Toast.LENGTH_SHORT)
-					.show();
-			show.setImageBitmap(bitmap);
-		}
-
-	};
 	
 	private Bitmap getDiskBitmap(String pathString)  
 	{  
@@ -142,85 +165,88 @@ public class MainActivity extends Activity implements CvCameraViewListener {
 	    } catch (Exception e)  
 	    {  
 	    }  
-	      
-	      
 	    return bitmap;  
 	}
 
 	@Override
 	public Mat onCameraFrame(Mat inputFrame) {
 		if (first) {
-			
-			
-			
-//			Bitmap firstBitmap = getDiskBitmap("/storage/emulated/0/image/000000.jpg");
 			firstPic = inputFrame;
-//			Utils.bitmapToMat(firstBitmap, firstPic);	
-//			Mat d = new Mat(firstPic.rows(), firstPic.cols(), CvType.CV_32F);
-//			firstPic.convertTo(d, CvType.CV_32F);
 			first = false;
 			second = true;
-			Log.i(TAG, firstPic.type()+""+firstPic.channels()+firstPic.rows()+firstPic.cols()+firstPic);
 			Log.i(TAG, "first success");
 		}
 		if (second) {
-//			Bitmap secondBitmap 
-//			= getDiskBitmap("/storage/emulated/0/image/000001.jpg");
 			secondPic = inputFrame;
 			Log.i(TAG, secondPic.type()+""+secondPic.channels()+secondPic);
-			
-//			secondBitmap = Bitmap.createBitmap(inputFrame.width(), inputFrame.height(), Bitmap.Config.RGB_565);  
-		        
-			
-			
-			
-//			Utils.matToBitmap(secondPic, secondBitmap);
-//			Utils.bitmapToMat(secondBitmap, secondPic);	 
-//			Mat d = inputFrame.rgba();
-//			Log.i(TAG, d.type()+""+d.channels()+d);
-//			d.convertTo(secondPic, CvType.CV_8U,1/255.0);
 			second = false;
 			third = true;
-//			Log.i(TAG, secondPic.type()+""+secondPic.channels()+secondPic);
-//			Log.i(TAG, d.type()+""+d.channels()+d);
 			LibVisodo.init(firstPic.getNativeObjAddr(),
-					secondPic.getNativeObjAddr());
+					secondPic.getNativeObjAddr(),isFromCamera);
 			Log.i(TAG, "second success");
 		}
 		if (third) {
-			
-			
+			String pathString = String.format(getResources().getString(R.string.path), i);
+			final Bitmap firstBitmap = getDiskBitmap(pathString);
 			afterPic = inputFrame;
-			bitmap = Bitmap.createBitmap(afterPic.width(), afterPic.height(),Bitmap.Config.ARGB_8888);
-			Utils.matToBitmap(afterPic, bitmap);
-			if(bitmap!=null){
-				runOnUiThread(new Runnable() {
-					
-					@Override
-					public void run() {
-						showPic();
-						Log.i(TAG,"show pic");
+			bitmap = Bitmap.createBitmap(inputFrame.width(), inputFrame.height(),Bitmap.Config.ARGB_8888);
+			new Thread(new Runnable() {
+				
+				@Override
+				public void run() {
+					Utils.matToBitmap(afterPic, bitmap);
+					if(bitmap!=null){
+						runOnUiThread(new Runnable() {
+							
+							@Override
+							public void run() {
+								if(!isFromCamera){
+								bitmap = firstBitmap;
+								}
+								showPic();
+								Log.i(TAG,"show pic");
+							}
+						});
 					}
-				});
-			}
+					
+				}
+			}).start();
 			
-//			saveBitmap(bitmap);
-//			Bitmap thirdBitmap = getDiskBitmap("/storage/emulated/0/image/000002.png");
-//			Utils.bitmapToMat(thirdBitmap, afterPic);
 			try{
-			LibVisodo.start(mRgba.getNativeObjAddr(),
-					afterPic.getNativeObjAddr(),i);
+				if(!isFromCamera){
+					if(firstBitmap != null){
+						double result[]= LibVisodo.start(mRgba.getNativeObjAddr(),
+								afterPic.getNativeObjAddr(),i,xx,yy,zz,isFromCamera);
+						Log.i(TAG,result[0]+"");
+						invalidResult(result);
+					}
+					else{
+						
+					}
+				}
+				else{
+			double result[]= LibVisodo.start(mRgba.getNativeObjAddr(),
+					afterPic.getNativeObjAddr(),i,xx,yy,zz,isFromCamera);
+			Log.i(TAG,result[0]+"");
+			invalidResult(result);
+				}
 			}
 			catch(Exception e){
 				Log.i(TAG,"FAIL");
 			}
 			i++;
 			Log.i(TAG, "third success");
+			
 		}
 		return mRgba;
 	}  
 	
 	
+	private void invalidResult(double[] result2) {
+		result.setText("Coordinates:x="+CutUtil.Cut(result2[0]+"")+"m  y="+CutUtil.Cut(result2[1]+"")
+				+"m  z="+CutUtil.Cut(result2[2]+"")+"m");
+	}
+
 	public void saveBitmap(Bitmap bm) {
 		  Log.e(TAG, "保存图片");
 		  File f = new File("/storage/emulated/0/image/","000002.png");
@@ -234,10 +260,8 @@ public class MainActivity extends Activity implements CvCameraViewListener {
 		   out.close();
 		   Log.i(TAG, "已经保存");
 		  } catch (FileNotFoundException e) {
-		   // TODO Auto-generated catch block
 		   e.printStackTrace();
 		  } catch (IOException e) {
-		   // TODO Auto-generated catch block
 		   e.printStackTrace();
 		  }
 

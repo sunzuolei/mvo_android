@@ -56,20 +56,22 @@ void featureTracking(Mat img_1, Mat img_2, vector<Point2f>& points1, vector<Poin
 
   //getting rid of points for which the KLT tracking failed or those who have gone outside the frame
   int indexCorrection = 0;
-//  for( int i=0; i<status.size(); i++){
-//     {  Point2f pt = points2.at(i- indexCorrection);
-//     	if (( status.at(i) == 0)||(pt.x<0)||(pt.y<0))	{
-//     		  if((pt.x<0)||(pt.y<0))	{
-//     		  	status.at(i) = 0;
-//     		  }
-//     		  points1.erase (points1.begin() + i - indexCorrection);
-//     		  points2.erase (points2.begin() + i - indexCorrection);
-//     		  indexCorrection++;
-//     	}
-//
-//     }
+  for( int i=0; i<status.size(); i++)
+     {  Point2f pt = points2.at(i- indexCorrection);
+     	if (( status.at(i) == 0)||(pt.x<0)||(pt.y<0))	{
+     		  if((pt.x<0)||(pt.y<0))	{
+     		  	status.at(i) = 0;
+     		  }
+     		  points1.erase (points1.begin() + i - indexCorrection);
+     		  points2.erase (points2.begin() + i - indexCorrection);
+     		  indexCorrection++;
+     	}
+
+     }
 
 }
+
+
 
 
 void featureDetection(Mat img_1, vector<Point2f>& points1)	{   //uses FAST as of now, modify parameters as necessary

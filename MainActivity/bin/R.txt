@@ -3,12 +3,15 @@ int attr show_fps 0x7f010000
 int dimen activity_horizontal_margin 0x7f040000
 int dimen activity_vertical_margin 0x7f040001
 int drawable ic_launcher 0x7f020000
-int id action_settings 0x7f080005
+int id action_settings 0x7f080008
 int id any 0x7f080000
 int id back 0x7f080001
+int id btn_change 0x7f080007
 int id color_blob_detection_activity_surface_view 0x7f080003
 int id front 0x7f080002
-int id tv_show 0x7f080004
+int id tv_result 0x7f080005
+int id tv_show 0x7f080006
+int id view1 0x7f080004
 int layout activity_main 0x7f030000
 int menu main 0x7f070000
 int string action_settings 0x7f050002
