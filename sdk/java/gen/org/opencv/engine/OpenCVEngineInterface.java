@@ -1,6 +1,6 @@
 /*
  * This file is auto-generated.  DO NOT MODIFY.
- * Original file: /Users/EchoZhou/develop/opencv/sdk/java/src/org/opencv/engine/OpenCVEngineInterface.aidl
+ * Original file: C:\\Users\\EchoZhou\\git\\mvo_android\\sdk\\java\\src\\org\\opencv\\engine\\OpenCVEngineInterface.aidl
  */
 package org.opencv.engine;
 /**
