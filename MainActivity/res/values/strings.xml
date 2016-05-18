@@ -4,5 +4,6 @@
     <string name="app_name">Visodo</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="path">/storage/emulated/0/image_2/%06d.png</string> 
 
 </resources>

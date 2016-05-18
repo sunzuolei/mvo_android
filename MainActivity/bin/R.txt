@@ -17,6 +17,7 @@ int menu main 0x7f070000
 int string action_settings 0x7f050002
 int string app_name 0x7f050000
 int string hello_world 0x7f050001
+int string path 0x7f050003
 int style AppBaseTheme 0x7f060000
 int style AppTheme 0x7f060001
 int[] styleable CameraBridgeViewBase { 0x7f010000, 0x7f010001 }
