@@ -8,10 +8,12 @@ The monocular visual odometry implemented on an Android phone.
 * OpenCV Manger
 
 ### 2.Function
+Through this application , you can calcuate the position and attitude of camera and 
+
 * Camera Mode
 
-Using mobile camera to get image inputFrame and output the position and attitude of camera.
+  Using mobile camera to get image inputFrame and output the position and attitude of camera.
 * Local Mode
 
-Get inputFrame through local storage directory and output the position and attitude of camera.
+  Get inputFrame through local storage directory and output the position and attitude of camera.
 
