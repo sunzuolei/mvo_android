@@ -57,8 +57,8 @@ JNIEXPORT jstring JNICALL Java_com_example_visodo_LibVisodo_init(JNIEnv * jenv,
 	Mat img_1_c = imread(filename1);
 	Mat img_2_c = imread(filename2);
 	if (isFromCamera) {
-		 img_1_c = *(Mat*) firstPic;
-		 img_2_c = *(Mat*) secondPic;
+		img_1_c = *(Mat*) firstPic;
+		img_2_c = *(Mat*) secondPic;
 	}
 
 	if (!img_1_c.data || !img_2_c.data) {
@@ -74,7 +74,7 @@ JNIEXPORT jstring JNICALL Java_com_example_visodo_LibVisodo_init(JNIEnv * jenv,
 	// feature detection, tracking
 	vector<Point2f> points1, points2; //vectors to store the coordinates of the feature points
 	featureDetection(img_1, points1); //detect features in img_1
-	vector<uchar> status;
+	vector < uchar > status;
 	featureTracking(img_1, img_2, points1, points2, status); //track those features to img_2
 
 	E = findEssentialMat(points2, points1, focal, pp, RANSAC, 0.999, 1.0, mask);
@@ -105,25 +105,19 @@ JNIEXPORT jdoubleArray JNICALL Java_com_example_visodo_LibVisodo_start(
 	double fontScale = 2;
 	int thickness = 2;
 	cv::Point textOrg(10, 50);
-//	float *f;
-//	f = new float[3];
 	jdoubleArray result;
 	result = jenv->NewDoubleArray(3);
 
-	vector<Point2f> currFeatures;
+	vector < Point2f > currFeatures;
 
 	char filename[100];
-
-//	  Mat traj = Mat::zeros(600, 600, CV_8UC3);
-
-//	for (int numFrame = 2; numFrame < MAX_FRAME; numFrame++) {
 	sprintf(filename, "/storage/emulated/0/image_2/%06d.png", i);
 	Mat currImage_c = imread(filename);
-	if(isFromCamera){
-	 currImage_c = *(Mat*) afterPic;
+	if (isFromCamera) {
+		currImage_c = *(Mat*) afterPic;
 	}
 	cvtColor(currImage_c, currImage, COLOR_BGR2GRAY);
-	vector<uchar> status;
+	vector < uchar > status;
 	featureTracking(prevImage, currImage, prevFeatures, currFeatures, status);
 
 	E = findEssentialMat(currFeatures, prevFeatures, focal, pp, RANSAC, 0.999,
@@ -142,7 +136,7 @@ JNIEXPORT jdoubleArray JNICALL Java_com_example_visodo_LibVisodo_start(
 	}
 
 	scale = 6; //getAbsoluteScale(numFrame, 0, t.at<double>(2));
-	if(isFromCamera){
+	if (isFromCamera) {
 		scale = 12;
 	}
 	if ((scale > 0.1) && (t.at<double>(2) > t.at<double>(0))
@@ -152,10 +146,6 @@ JNIEXPORT jdoubleArray JNICALL Java_com_example_visodo_LibVisodo_start(
 		R_f = R * R_f;
 	}
 
-//	else {
-	//cout << "scale below 0.1, or incorrect translation" << endl;
-//	}
-	// a redetection is triggered in case the number of feautres being trakced go below a particular threshold
 	if (prevFeatures.size() < MIN_NUM_FEAT) {
 		featureDetection(prevImage, prevFeatures);
 		featureTracking(prevImage, currImage, prevFeatures, currFeatures,
@@ -166,13 +156,12 @@ JNIEXPORT jdoubleArray JNICALL Java_com_example_visodo_LibVisodo_start(
 
 	int x = int(t_f.at<double>(0)) + 300;
 	int y = int(t_f.at<double>(2)) + 100;
-	if(isFromCamera){
-		circle(traj, Point(x, y), 1, CV_RGB(0,0,255), 10);
+	if (isFromCamera) {
+		circle(traj, Point(x, y), 1, CV_RGB(0, 0, 255), 10);
+	} else {
+		circle(traj, Point(x, y), 1, CV_RGB(0, 0, 255), 5);
 	}
-	else{
-	circle(traj, Point(x, y), 1, CV_RGB(0,0,255), 5);
-	}
-	rectangle(traj, Point(10, 30), Point(550, 50), CV_RGB(255,255,255),
+	rectangle(traj, Point(10, 30), Point(550, 50), CV_RGB(255, 255, 255),
 			CV_FILLED);
 	xx = t_f.at<double>(0);
 	yy = t_f.at<double>(1);
@@ -183,27 +172,25 @@ JNIEXPORT jdoubleArray JNICALL Java_com_example_visodo_LibVisodo_start(
 	buf[1] = yy;
 	buf[2] = zz;
 	jenv->SetDoubleArrayRegion(result, 0, 3, buf);
-//	for(int i=0;i<3;i++)
-//		double a  = t_f.at<double>(1);
-//	f[i] = t_f.at<double>(1);
-//	sprintf(text, "Coordinates: x = %02fm y = %02fm z = %02fm",
-//			t_f.at<double>(0), t_f.at<double>(1), t_f.at<double>(2));
-//	sprintf(text, "Coordinates: x = %02fm ",
-////			"y = %02fm z = %02fm",
-//				xx);
-//	sprintf(second, "                                          y = %02fm ",
-//	//			"y = %02fm z = %02fm",
-//					yy);
-////				, t_f.at<double>(0), t_f.at<double>(0));
-//	putText(traj, text, textOrg, fontFace, fontScale, Scalar::all(0),
-//			thickness, 8);
-//	putText(traj, second, textOrg, fontFace, fontScale, Scalar::all(0),
-//				thickness, 8);
 
 	clock_t end = clock();
 
-//	return jenv->NewStringUTF("success");
 	return result;
+}
+
+JNIEXPORT void JNICALL JNICALL Java_com_example_visodo_LibVisodo_FindFeatures(
+		JNIEnv*, jobject, jlong addrRgba) {
+	Mat mGr;
+	Mat& mRgb = *(Mat*) addrRgba;
+	cvtColor(mRgb, mGr, COLOR_BGR2GRAY);
+	vector<KeyPoint> v;
+
+	Ptr<FeatureDetector> detector = FastFeatureDetector::create(50);
+	detector->detect(mGr, v);
+	for (unsigned int i = 0; i < v.size(); i++) {
+		const KeyPoint& kp = v[i];
+		circle(mRgb, Point(kp.pt.x, kp.pt.y), 6, Scalar(0, 255, 0, 255));
+	}
 }
 
 //double getAbsoluteScale(int frame_id, int sequence_id, double z_cal)	{

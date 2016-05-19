@@ -189,6 +189,13 @@ public class MainActivity extends Activity implements CvCameraViewListener {
 			String pathString = String.format(getResources().getString(R.string.path), i);
 			final Bitmap firstBitmap = getDiskBitmap(pathString);
 			afterPic = inputFrame;
+			if(isFromCamera){
+				LibVisodo.FindFeatures(afterPic.getNativeObjAddr());
+			}
+			else{
+				Utils.bitmapToMat(firstBitmap, afterPic);
+				LibVisodo.FindFeatures(afterPic.getNativeObjAddr());
+			}
 			bitmap = Bitmap.createBitmap(inputFrame.width(), inputFrame.height(),Bitmap.Config.ARGB_8888);
 			new Thread(new Runnable() {
 				
@@ -200,9 +207,9 @@ public class MainActivity extends Activity implements CvCameraViewListener {
 							
 							@Override
 							public void run() {
-								if(!isFromCamera){
-								bitmap = firstBitmap;
-								}
+//								if(!isFromCamera){
+//								bitmap = firstBitmap;
+//								}
 								showPic();
 								Log.i(TAG,"show pic");
 							}
@@ -216,7 +223,7 @@ public class MainActivity extends Activity implements CvCameraViewListener {
 				if(!isFromCamera){
 					if(firstBitmap != null){
 						double result[]= LibVisodo.start(mRgba.getNativeObjAddr(),
-								afterPic.getNativeObjAddr(),i,xx,yy,zz,isFromCamera);
+								inputFrame.getNativeObjAddr(),i,xx,yy,zz,isFromCamera);
 						Log.i(TAG,result[0]+"");
 						invalidResult(result);
 					}

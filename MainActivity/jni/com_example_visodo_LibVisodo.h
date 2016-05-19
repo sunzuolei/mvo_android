@@ -18,6 +18,8 @@ JNIEXPORT jdoubleArray JNICALL Java_com_example_visodo_LibVisodo_start
 JNIEXPORT jstring JNICALL Java_com_example_visodo_LibVisodo_init
   (JNIEnv * , jclass,jlong firstPic,jlong secondPic , jboolean isFromCamera);
 
+JNIEXPORT void JNICALL Java_com_example_visodo_LibVisodo_FindFeatures(JNIEnv*, jobject,jlong addrRgba);
+
 #ifdef __cplusplus
 }
 #endif
