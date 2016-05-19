@@ -19,5 +19,5 @@ Through this application , you can calcuate the position and attitude of camera.
 
   Get inputFrame through local storage directory.
   
-  ![Local Mode Runtime Screenshot](http://7xqxgd.com1.z0.glb.clouddn.com/local_%E5%89%AF%E6%9C%AC.png)
+  ![Local Mode Runtime Screenshot](http://7xqxgd.com1.z0.glb.clouddn.com/local_%E5%89%AF%E6%9C%AC(1).png)
 
