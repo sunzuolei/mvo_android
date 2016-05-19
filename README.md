@@ -8,9 +8,9 @@ The monocular visual odometry implemented on an Android phone.
 * OpenCV Manger
 
 ### 2.BuildProject
-To build mvo_android, you can simply import cloned project into eclipse.I've already imported and set opencv3.1.0 as library,so you can jump this step.Run ndk-build and library will be generated into libs directory. After all this, your work tree will be like this:
+To build mvo_android, you can simply import cloned project into eclipse.I've already imported and set opencv3.1.0 as library,so you can jump this step.After that,you need to change the path to your OpenCV.mk in Android.mk. Config and run ndk-build . 
 
-### 2.Function
+### 3.Function
 Through this application , you can calcuate the position and attitude of camera.Moreover,it provides feature detection constantly.
 
 * Camera Mode
