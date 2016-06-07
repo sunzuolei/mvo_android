@@ -32,4 +32,7 @@ Through this application , you can calcuate the position and attitude of camera.
 
 ### 4.Demo
   [Here is the video demo for this application](http://v.youku.com/v_show/id_XMTU5OTQ5Njk0NA==.html?x&sharefrom=android)
+  
+### 5.APK(armeabi-v7a)
+  If you want to try Visdo simply,you can download and install Visodo.apk and OpencvManager.apk on your android phone 
 
