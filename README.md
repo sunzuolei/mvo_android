@@ -19,7 +19,7 @@ Through this application , you can calcuate the position and attitude of camera.
 
   Using mobile camera to get image inputFrame.
   ##### camera mode runtime screenshot
-  ![Camera Mode Runtime Screenshot](http://7xqxgd.com1.z0.glb.clouddn.com/camrea_%E5%89%AF%E6%9C%AC.png)
+  ![Camera Mode Runtime Screenshot](http://7xqxgd.com1.z0.glb.clouddn.com/camrea_%E5%89%AF%E6%9C%AC.png =100x100)
 * Local Mode
 
   Get inputFrame through local storage directory.
