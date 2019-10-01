@@ -1,0 +1,47 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+
+    defaultConfig {
+        applicationId "com.example.visodo"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        externalNativeBuild {
+
+            ndk {
+                // Specifies the ABI configurations of your native
+                // libraries Gradle should build and package with your APK.
+                abiFilters "arm64-v8a", "armeabi-v7a"//, "armeabi-v7a"//, "x86", "x86_64"//, "armeabi"
+
+//            cFlags+=("-std=c++11")
+//            cFlags+=("-fexceptions")
+//            cFlags+=("-I${file("C:/Users/yakki/AndroidStudioProjects/OrbSlam2Test/app/src/main/jni/Thirdparty/OpenCV-android-sdk/sdk/native/jni/include")}".toString())
+//            cFlags+=("-I${file("C:/Users/yakki/AndroidStudioProjects/OrbSlam2Test/app/src/main/jni/Thirdparty/OpenCV-android-sdk/sdk/native/jni/include/opencv")}".toString())
+//            stl = "gnustl_shared"
+                stl = "c++_shared"
+            }
+        }
+    }
+
+    buildTypes {
+       release {
+           minifyEnabled false
+           proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+       }
+    }
+    externalNativeBuild {
+        ndkBuild {
+            path file('src/main/jni/Android.mk')
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    api 'org.opencv:opencv-android:3.4.1'
+}
