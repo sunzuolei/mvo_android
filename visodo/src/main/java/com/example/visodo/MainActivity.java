@@ -26,7 +26,7 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-public class MainActivity extends Activity implements CameraBridgeViewBase.CvCameraViewListener2 {
+public class MainActivity extends Activity implements CameraBridgeViewBase.CvCameraViewListener {
 
 	double xx = 0d;
 	double yy = 0d;
@@ -150,15 +150,15 @@ public class MainActivity extends Activity implements CameraBridgeViewBase.CvCam
 	}
 
 	@Override
-	public Mat onCameraFrame(CameraBridgeViewBase.CvCameraViewFrame/*Mat*/ inputFrame) {
+	public Mat onCameraFrame(Mat inputFrame) {
 		if (first) {
-			firstPic = inputFrame.rgba();
+			firstPic = inputFrame;
 			first = false;
 			second = true;
 			Log.i(TAG, "first success");
 		}
 		if (second) {
-			secondPic = inputFrame.rgba();
+			secondPic = inputFrame;
 			Log.i(TAG, secondPic.type() + "" + secondPic.channels() + secondPic);
 			second = false;
 			third = true;
@@ -169,14 +169,14 @@ public class MainActivity extends Activity implements CameraBridgeViewBase.CvCam
 		if (third) {
 			String pathString = String.format(getResources().getString(R.string.path), i);
 			final Bitmap firstBitmap = getDiskBitmap(pathString);
-			afterPic = inputFrame.rgba();
+			afterPic = inputFrame;
 			if (isFromCamera) {
 				LibVisodo.FindFeatures(afterPic.getNativeObjAddr());
 			} else {
 				Utils.bitmapToMat(firstBitmap, afterPic);
 				LibVisodo.FindFeatures(afterPic.getNativeObjAddr());
 			}
-			bitmap = Bitmap.createBitmap(inputFrame.rgba().width(), inputFrame.rgba().height(), Bitmap.Config.ARGB_8888);
+			bitmap = Bitmap.createBitmap(inputFrame.width(), inputFrame.height(), Bitmap.Config.ARGB_8888);
 			new Thread(() -> {
 				Utils.matToBitmap(afterPic, bitmap);
 				if (bitmap != null) {
@@ -194,7 +194,7 @@ public class MainActivity extends Activity implements CameraBridgeViewBase.CvCam
 				if (!isFromCamera) {
 					if (firstBitmap != null) {
 						double[] result = LibVisodo.start(mRgba.getNativeObjAddr(),
-								inputFrame.rgba().getNativeObjAddr(), i, xx, yy, zz, isFromCamera);
+								inputFrame.getNativeObjAddr(), i, xx, yy, zz, isFromCamera);
 						Log.i(TAG, result[0] + "");
 						invalidResult(result);
 					} else {

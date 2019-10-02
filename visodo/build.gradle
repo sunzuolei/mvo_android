@@ -19,6 +19,7 @@ android {
                 stl = "c++_shared"
             }
         }
+        signingConfig signingConfigs.debug
     }
 
     buildTypes {
@@ -34,7 +35,7 @@ android {
         ndkBuild {
             //Comment/UnComment to rebuild libs UnCommented, need *.so in jniLibs
             //copy them from build/intermediates/ndkBuild/(debug|release)/local(arm64-v8a|armeabi-v7a)
-            path file('src/main/jni/Android.mk')
+//            path file('src/main/jni/Android.mk')
         }
     }
     compileOptions {
