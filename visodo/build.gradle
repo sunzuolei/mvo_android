@@ -35,7 +35,8 @@ android {
     }
     externalNativeBuild {
         ndkBuild {
-            path file('src/main/jni/Android.mk')
+            //Comment/UnComment to rebuild libs UnCommented, need *.so in jniLibs
+//            path file('src/main/jni/Android.mk')
         }
     }
 

@@ -139,8 +139,7 @@ extern "C" JNIEXPORT jdoubleArray JNICALL Java_com_example_visodo_LibVisodo_star
 	if (isFromCamera) {
 		scale = 12;
 	}
-	if ((scale > 0.1) && (t.at<double>(2) > t.at<double>(0))
-			&& (t.at<double>(2) > t.at<double>(1))) {
+	if ((scale > 0.1) && (t.at<double>(2) > t.at<double>(0)) && (t.at<double>(2) > t.at<double>(1))) {
 
 		t_f = t_f + scale * (R_f * t);
 		R_f = R * R_f;
@@ -148,8 +147,7 @@ extern "C" JNIEXPORT jdoubleArray JNICALL Java_com_example_visodo_LibVisodo_star
 
 	if (prevFeatures.size() < MIN_NUM_FEAT) {
 		featureDetection(prevImage, prevFeatures);
-		featureTracking(prevImage, currImage, prevFeatures, currFeatures,
-				status);
+		featureTracking(prevImage, currImage, prevFeatures, currFeatures, status);
 	}
 	prevImage = currImage.clone();
 	prevFeatures = currFeatures;
@@ -161,8 +159,7 @@ extern "C" JNIEXPORT jdoubleArray JNICALL Java_com_example_visodo_LibVisodo_star
 	} else {
 		circle(traj, Point(x, y), 1, CV_RGB(0, 0, 255), 5);
 	}
-	rectangle(traj, Point(10, 30), Point(550, 50), CV_RGB(255, 255, 255),
-			CV_FILLED);
+	rectangle(traj, Point(10, 30), Point(550, 50), CV_RGB(255, 255, 255), cv::FILLED/*CV_FILLED*/);
 	xx = t_f.at<double>(0);
 	yy = t_f.at<double>(1);
 	zz = t_f.at<double>(2);

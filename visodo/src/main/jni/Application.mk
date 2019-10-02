@@ -1,7 +1,7 @@
-APP_STL := c++_static
+APP_STL := c++_shared
 
 APP_CPPFLAGS := -frtti -fexceptions
-APP_CPPFLAGS += -mfloat-abi=hard -mfpu=neon -std=c++11
+APP_CPPFLAGS += -mfloat-abi=softfp -mfpu=neon -std=c++11
 APP_CPPFLAGS += -Wno-deprecated -Wno-c++11-narrowing -Wno-logical-op-parentheses
 
 APP_ABI := arm64-v8a armeabi-v7a

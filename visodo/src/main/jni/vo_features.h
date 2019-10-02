@@ -76,8 +76,8 @@ void featureDetection(Mat img_1, vector<Point2f> &points1) {
 
     int fast_threshold = 15;
     bool nonmaxSuppression = true;
-    FAST(img_1, keypoints_1, fast_threshold, nonmaxSuppression);
-
+//error: undefined reference to 'cv::FAST(cv::_InputArray const&, std::__ndk1::vector<cv::KeyPoint, std::__ndk1::allocator<cv::KeyPoint> >&, int, bool)'
+    cv::FAST(img_1, keypoints_1, fast_threshold, nonmaxSuppression);
     //types.hpp, libopencv_core.so.3.0.0
     //namespace cv
     //KeyPoint::convert ( std::vector<KeyPoint>const& keypoints, std::vector<Point_<float> >& points2f, std::vector<int>const& keypointIndexes ) [static]
