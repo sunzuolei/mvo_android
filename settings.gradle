@@ -1,2 +1,4 @@
-include ':app'
 include ':visodo'
+
+include ':opencv'
+project(':opencv').projectDir = new File('C:\\Users\\Pascal\\AndroidstudioProjects\\OpenCV-4.4.1-android-sdk\\sdk')

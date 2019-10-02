@@ -83,3 +83,12 @@ lint/outputs/
 lint/tmp/
 # lint/reports/
 
+.idea/.gitignore
+.idea/codeStyles/
+.idea/misc.xml
+.idea/modules/
+java_pid14288.hprof
+visodo/.cxx/ndkBuild/debug/
+visodo/.cxx/ndk_locator_record.json
+visodo/src/main/jni/.DS_Store
+visodo/src/main/jniLibs/

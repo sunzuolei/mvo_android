@@ -4,24 +4,28 @@
     android:layout_height="match_parent"
     android:background="#ffffff"
     android:orientation="horizontal"
-    tools:context="com.example.visodo.MainActivity" >
+    tools:context="com.example.visodo.MainActivity"
+    xmlns:opencv="http://schemas.android.com/apk/res-auto"
+    >
 
     <org.opencv.android.JavaCameraView
         android:id="@+id/color_blob_detection_activity_surface_view"
         android:layout_width="fill_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        opencv:show_fps="true"
+        opencv:camera_id="any"/>
 
     <View
         android:layout_width="65dp"
         android:layout_height="match_parent"
-        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:background="#ffffff" />
 
     <View
         android:id="@+id/view1"
         android:layout_width="80dp"
         android:layout_height="match_parent"
-        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
         android:background="#ffffff" />
 
     <TextView
@@ -38,21 +42,21 @@
         android:id="@+id/tv_show"
         android:layout_width="300dp"
         android:layout_height="250dp"
-        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentTop="true"
         android:padding="20dp" />
 
     <LinearLayout
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
         android:layout_below="@id/tv_show" >
 
         <Button
             android:id="@+id/btn_change"
             android:layout_width="80dp"
             android:layout_height="wrap_content"
-            android:layout_marginRight="200dp"
+            android:layout_marginEnd="200dp"
             android:gravity="center"
             android:text="Camera" />
     </LinearLayout>

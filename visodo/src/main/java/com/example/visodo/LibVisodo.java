@@ -2,7 +2,7 @@ package com.example.visodo;
 
 public class LibVisodo {
 	static {
-		System.loadLibrary("opencv_java3");
+		System.loadLibrary("opencv_java4");
 		System.loadLibrary("visodo");
 	}
 

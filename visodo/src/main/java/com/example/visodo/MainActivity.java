@@ -6,15 +6,15 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
-import android.view.View.OnClickListener;
+
+import android.view.SurfaceView;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import org.opencv.android.BaseLoaderCallback;
 import org.opencv.android.CameraBridgeViewBase;
-import org.opencv.android.CameraBridgeViewBase.CvCameraViewListener;
+import org.opencv.android.JavaCameraView;
 import org.opencv.android.LoaderCallbackInterface;
 import org.opencv.android.OpenCVLoader;
 import org.opencv.android.Utils;
@@ -26,13 +26,13 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-public class MainActivity extends Activity implements CvCameraViewListener {
+public class MainActivity extends Activity implements CameraBridgeViewBase.CvCameraViewListener2 {
 
 	double xx = 0d;
 	double yy = 0d;
 	double zz = 0d;
 	private ImageView show;
-	private String TAG = "MainActivity";
+	private String TAG = MainActivity.class.getSimpleName();
 	private CameraBridgeViewBase mOpenCvCameraView;
 	private Mat mRgba;
 	private Mat firstPic;
@@ -73,25 +73,22 @@ public class MainActivity extends Activity implements CvCameraViewListener {
 		show = (ImageView) findViewById(R.id.tv_show);
 		result = (TextView) findViewById(R.id.tv_result);
 		btnChange = (Button) findViewById(R.id.btn_change);
-		btnChange.setOnClickListener(new OnClickListener() {
-
-			@Override
-			public void onClick(View v) {
-				mRgba = new Mat(height, width, CvType.CV_8UC4, Scalar.all(255));
-				first = true;
-				second = false;
-				third = false;
-				i = 2;
-				if (isFromCamera) {
-					isFromCamera = false;
-					btnChange.setText("Local");
-				} else {
-					isFromCamera = true;
-					btnChange.setText("Camera");
-				}
+		btnChange.setOnClickListener(v -> {
+			mRgba = new Mat(height, width, CvType.CV_8UC4, Scalar.all(255));
+			first = true;
+			second = false;
+			third = false;
+			i = 2;
+			if (isFromCamera) {
+				isFromCamera = false;
+				btnChange.setText("Local");
+			} else {
+				isFromCamera = true;
+				btnChange.setText("Camera");
 			}
 		});
-		mOpenCvCameraView = (CameraBridgeViewBase) findViewById(R.id.color_blob_detection_activity_surface_view);
+		mOpenCvCameraView = /*(CameraBridgeViewBase)*/(JavaCameraView) findViewById(R.id.color_blob_detection_activity_surface_view);
+		mOpenCvCameraView.setVisibility(SurfaceView.VISIBLE);
 		mOpenCvCameraView.setCvCameraViewListener(this);
 		IntentFilter filter = new IntentFilter();
 		filter.addAction("bitmap");
@@ -125,10 +122,8 @@ public class MainActivity extends Activity implements CvCameraViewListener {
 	public void onResume() {
 		super.onResume();
 		if (!OpenCVLoader.initDebug()) {
-			Log.i(TAG,
-					"Internal OpenCV library not found. Using OpenCV Manager for initialization");
-			OpenCVLoader.initAsync(OpenCVLoader.OPENCV_VERSION_3_0_0, this,
-					mLoaderCallback);
+			Log.i(TAG, "Internal OpenCV library not found. Using OpenCV Manager for initialization");
+			OpenCVLoader.initAsync(OpenCVLoader.OPENCV_VERSION, this, mLoaderCallback);
 		} else {
 			Log.i(TAG, "OpenCV library found inside package. Using it!");
 			mLoaderCallback.onManagerConnected(LoaderCallbackInterface.SUCCESS);
@@ -155,15 +150,15 @@ public class MainActivity extends Activity implements CvCameraViewListener {
 	}
 
 	@Override
-	public Mat onCameraFrame(Mat inputFrame) {
+	public Mat onCameraFrame(CameraBridgeViewBase.CvCameraViewFrame/*Mat*/ inputFrame) {
 		if (first) {
-			firstPic = inputFrame;
+			firstPic = inputFrame.rgba();
 			first = false;
 			second = true;
 			Log.i(TAG, "first success");
 		}
 		if (second) {
-			secondPic = inputFrame;
+			secondPic = inputFrame.rgba();
 			Log.i(TAG, secondPic.type() + "" + secondPic.channels() + secondPic);
 			second = false;
 			third = true;
@@ -174,32 +169,24 @@ public class MainActivity extends Activity implements CvCameraViewListener {
 		if (third) {
 			String pathString = String.format(getResources().getString(R.string.path), i);
 			final Bitmap firstBitmap = getDiskBitmap(pathString);
-			afterPic = inputFrame;
+			afterPic = inputFrame.rgba();
 			if (isFromCamera) {
 				LibVisodo.FindFeatures(afterPic.getNativeObjAddr());
 			} else {
 				Utils.bitmapToMat(firstBitmap, afterPic);
 				LibVisodo.FindFeatures(afterPic.getNativeObjAddr());
 			}
-			bitmap = Bitmap.createBitmap(inputFrame.width(), inputFrame.height(), Bitmap.Config.ARGB_8888);
-			new Thread(new Runnable() {
-
-				@Override
-				public void run() {
-					Utils.matToBitmap(afterPic, bitmap);
-					if (bitmap != null) {
-						runOnUiThread(new Runnable() {
-
-							@Override
-							public void run() {
+			bitmap = Bitmap.createBitmap(inputFrame.rgba().width(), inputFrame.rgba().height(), Bitmap.Config.ARGB_8888);
+			new Thread(() -> {
+				Utils.matToBitmap(afterPic, bitmap);
+				if (bitmap != null) {
+					runOnUiThread(() -> {
 //								if(!isFromCamera){
 //								bitmap = firstBitmap;
 //								}
-								showPic();
-								Log.i(TAG, "show pic");
-							}
-						});
-					}
+						showPic();
+						Log.i(TAG, "show pic");
+					});
 				}
 			}).start();
 
@@ -207,7 +194,7 @@ public class MainActivity extends Activity implements CvCameraViewListener {
 				if (!isFromCamera) {
 					if (firstBitmap != null) {
 						double[] result = LibVisodo.start(mRgba.getNativeObjAddr(),
-								inputFrame.getNativeObjAddr(), i, xx, yy, zz, isFromCamera);
+								inputFrame.rgba().getNativeObjAddr(), i, xx, yy, zz, isFromCamera);
 						Log.i(TAG, result[0] + "");
 						invalidResult(result);
 					} else {
@@ -220,7 +207,7 @@ public class MainActivity extends Activity implements CvCameraViewListener {
 					invalidResult(result);
 				}
 			} catch (Exception e) {
-				Log.i(TAG, "FAIL");
+				Log.e(TAG, "FAIL" + e);
 			}
 			i++;
 			Log.i(TAG, "third success");
@@ -234,7 +221,7 @@ public class MainActivity extends Activity implements CvCameraViewListener {
 	}
 
 	public void saveBitmap(Bitmap bm) {
-		Log.e(TAG, "save Picture");
+		Log.i(TAG, "save Picture");
 		File f = new File("/storage/emulated/0/image/", "000002.png");
 		if (f.exists()) {
 			f.delete();
@@ -244,7 +231,7 @@ public class MainActivity extends Activity implements CvCameraViewListener {
 			bm.compress(Bitmap.CompressFormat.PNG, 90, out);
 			out.flush();
 			out.close();
-			Log.i(TAG, "Already saved");
+			Log.w(TAG, "Already saved");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

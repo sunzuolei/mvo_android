@@ -25,10 +25,10 @@ THE SOFTWARE.
 */
 
 #include "opencv2/video/tracking.hpp"
-#include "opencv2/imgproc/imgproc.hpp"
-#include "opencv2/highgui/highgui.hpp"
-#include "opencv2/features2d/features2d.hpp"
-#include "opencv2/calib3d/calib3d.hpp"
+#include "opencv2/imgproc.hpp"
+#include "opencv2/highgui.hpp"
+#include "opencv2/features2d.hpp"
+#include "opencv2/calib3d.hpp"
 
 #include <iostream>
 #include <ctype.h>
@@ -54,7 +54,7 @@ void featureTracking(Mat img_1, Mat img_2, vector<Point2f> &points1, vector<Poin
 
     //getting rid of points for which the KLT tracking failed or those who have gone outside the frame
     int indexCorrection = 0;
-    for (int i = 0; i < status.size(); i++) {
+    for (unsigned int i = 0; i < status.size(); i++) {
         Point2f pt = points2.at(i - indexCorrection);
         if ((status.at(i) == 0) || (pt.x < 0) || (pt.y < 0)) {
             if ((pt.x < 0) || (pt.y < 0)) {
@@ -69,19 +69,13 @@ void featureTracking(Mat img_1, Mat img_2, vector<Point2f> &points1, vector<Poin
 //uses FAST as of now, modify parameters as necessary
 void featureDetection(Mat img_1, vector<Point2f> &points1) {
 //	 int minHessian = 15;
-//
 //	  FastFeatureDetector detector( minHessian );
 
     vector<KeyPoint> keypoints_1;
 
     int fast_threshold = 15;
     bool nonmaxSuppression = true;
-//error: undefined reference to 'cv::FAST(cv::_InputArray const&, std::__ndk1::vector<cv::KeyPoint, std::__ndk1::allocator<cv::KeyPoint> >&, int, bool)'
     cv::FAST(img_1, keypoints_1, fast_threshold, nonmaxSuppression);
-    //types.hpp, libopencv_core.so.3.0.0
-    //namespace cv
-    //KeyPoint::convert ( std::vector<KeyPoint>const& keypoints, std::vector<Point_<float> >& points2f, std::vector<int>const& keypointIndexes ) [static]
-    //KeyPoint::convert ( std::vector<Point_<float> >const& points2f, std::vector<KeyPoint>& keypoints, float size, float response, int octave, int class_id ) [static]
     cv::KeyPoint::convert(keypoints_1, points1, std::vector<int>());
 
 //  Mat img_keypoints;

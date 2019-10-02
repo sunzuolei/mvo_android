@@ -16,12 +16,6 @@ android {
                 // Specifies the ABI configurations of your native
                 // libraries Gradle should build and package with your APK.
                 abiFilters "arm64-v8a", "armeabi-v7a"//, "armeabi-v7a"//, "x86", "x86_64"//, "armeabi"
-
-//            cFlags+=("-std=c++11")
-//            cFlags+=("-fexceptions")
-//            cFlags+=("-I${file("C:/Users/yakki/AndroidStudioProjects/OrbSlam2Test/app/src/main/jni/Thirdparty/OpenCV-android-sdk/sdk/native/jni/include")}".toString())
-//            cFlags+=("-I${file("C:/Users/yakki/AndroidStudioProjects/OrbSlam2Test/app/src/main/jni/Thirdparty/OpenCV-android-sdk/sdk/native/jni/include/opencv")}".toString())
-//            stl = "gnustl_shared"
                 stl = "c++_shared"
             }
         }
@@ -32,17 +26,25 @@ android {
            minifyEnabled false
            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
        }
+        debug {
+            minifyEnabled false
+        }
     }
     externalNativeBuild {
         ndkBuild {
             //Comment/UnComment to rebuild libs UnCommented, need *.so in jniLibs
-//            path file('src/main/jni/Android.mk')
+            //copy them from build/intermediates/ndkBuild/(debug|release)/local(arm64-v8a|armeabi-v7a)
+            path file('src/main/jni/Android.mk')
         }
     }
-
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    api 'org.opencv:opencv-android:3.4.1'
+//    api 'org.opencv:opencv-android:3.4.1'
+    implementation project(path: ':opencv')
 }
