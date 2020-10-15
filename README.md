@@ -1,19 +1,16 @@
 # mvo_android
 The monocular visual odometry implemented on an Android phone.
 ### 1.Dependency
-* Eclipse with ADT、CDT;
-
-* android-ndk-r10e(NDK);
-* OpenCV4Android 3.0.0 or 3.1.0;
-
-  [Here to download OpenCV4Android](http://opencv.org/downloads.html)
-* OpenCV Manger
+* Android Studio 3.5
+* OpenCV4Android sdk 3.4.0 or 4.1.0;
 
 ### 2.BuildProject
-To build mvo_android, you can simply import cloned project into eclipse.I've already imported and set opencv3.1.0 as library,so you can jump this step.After that,you need to change the path to your OpenCV.mk in Android.mk. Config and run ndk-build . 
+To build mvo_android, you can simply import cloned project into studio.
+You need to change the path to your OpenCV_sdk in Android.mk & build.gradle. 
+Config and run ndk-build . 
 
 ### 3.Function
-Through this application , you can calcuate the position and attitude of camera.Moreover,it provides feature detection constantly.
+Through this application , you can calculate the position and attitude of camera.Moreover,it provides feature detection constantly.
 
 * Camera Mode
 
@@ -33,6 +30,6 @@ Through this application , you can calcuate the position and attitude of camera.
 ### 4.Demo
   [Here is the video demo for this application](http://v.youku.com/v_show/id_XMTU5OTQ5Njk0NA==.html?x&sharefrom=android)
   
-### 5.APK(armeabi-v7a)
-  If you want to try Visdo simply,you can download and install Visodo.apk and OpencvManager.apk on your android phone 
+### 5.APK(arm64-v8a)
+  If you want to try Visdo simply,you can download and install Visodo-release.apk on your android phone 
 
